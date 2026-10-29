@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>新增學生</title>
+</head>
+<body style="margin: 30px; font-family: Arial, sans-serif;">
+    <h2>新增學生資料</h2>
+    <form action="/student/insert" method="post">
+        <p>
+            <label>學號：</label>
+            <input type="number" name="stuid" required placeholder="例如：114213999">
+        </p>
+        <p>
+            <label>姓名：</label>
+            <input type="text" name="name" required placeholder="例如：王小明">
+        </p>
+        <p>
+            <label>科系：</label>
+            <input type="text" name="dept" value="資管系">
+        </p>
+        <p>
+            <label>身高：</label>
+            <input type="number" name="height" value="170">
+        </p>
+        <p>
+            <label>體重：</label>
+            <input type="number" name="weight" value="60">
+        </p>
+        <p>
+            <button type="submit" style="padding: 6px 12px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">確認新增</button>
+            <a href="/students/list/template" style="margin-left: 10px;">取消返回</a>
+        </p>
+    </form>
+</body>
+</html>
